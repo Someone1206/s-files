@@ -1,4 +1,7 @@
+
 @echo off
-if not exist "bin" mkdir "bin"
+set PATH_TO_MSBUILD=
+rem path to msbuild if u are not using visual studio cuz its too heavy for
+rem your pc to run, like mine, while using a browser and/or music player
 @echo on
-g++ *.cpp err\*.cpp core\*.cpp -o bin\s-files.exe -std=c++17 -lcomctl32 -lGdi32
+%PATH_TO_MSBUILD% s-files.vcxproj -property:Configuration=Debug

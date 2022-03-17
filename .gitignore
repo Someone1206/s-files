@@ -1,2 +1,9 @@
 bin/
-.exe
+*.exe
+include/
+lib/
+intermediates/
+*.vcxproj.filters
+# create ur own filters if u need em
+.vs/
+# visual studio specific stuffs
